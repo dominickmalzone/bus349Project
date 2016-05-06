@@ -18,7 +18,7 @@
     <link href="css/one-page-wonder.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="js/app.js"></script>
-
+    <script src="js/controllers.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +29,7 @@
 
 </head>
 
-<body ng-app="boatup" ng-controller="controllers">
+<body ng-app="boatup" ng-controller="mainCtrl">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -70,53 +70,17 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <h1>Selling can be rough</h1>
-                <h2>Boat stuff.</h2>
-                <button type="button" class="btn btn-primary btn-lg">Large button</button>
-            </div>
-        </div>
-    </header>
+        
 
-    <!-- Page Content -->
-    <div class="container">
+        <div ng-app="myApp" ng-controller="myCtrl">
 
-        <hr class="featurette-divider">
+                <h1>Hello world</h1>
 
-        <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500" style="height: 500px; width: 500px;">
-            <h2 class="featurette-heading">Buy
-                <span class="text-muted">from fisherman who love their boat as much as you will.</span>
-            </h2>
-            <p class="lead">All boats and owners go through a qualification process to ensure highest quality for the boatup community. We do our best to ensure proper maintenance, minimal issuess and a transparent transaction.       </div>
 
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="">
-            <h2 class="featurette-heading">Sell
-                <span class="text-muted">your boat on a high converting platform</span>
-            </h2>
-            <p class="lead">asdksab</p>
         </div>
 
-        <hr class="featurette-divider">
 
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">Simple
-                <span class="text-muted">Will Seal the Deal.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
 
-        <hr class="featurette-divider">
 
         <!-- Footer -->
         <footer>
@@ -129,6 +93,7 @@
 
     </div>
     <!-- /.container -->
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
