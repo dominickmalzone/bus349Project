@@ -175,3 +175,27 @@ footer {
         margin-left: 0;
     }
 }
+
+
+/* My great stylleeeee */
+
+
+.proimg{
+  position: relative;
+  left: 50%;  
+  height: 100px;
+  width: 100px;  
+}
+
+.pad{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.detailList{
+    list-style-type: none;
+}
+
+
+
+
