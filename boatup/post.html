@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html ng-app="boatup">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BoatUp - The boatup slogan</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller="mainCtrl">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BoatUp</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#support">Support</a>
+                    </li>
+                    <li>
+                        <a href="#terms">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Post a boat for sale -->
+    
+<div class="backGround" style="background-color:#eaeaea; margin-top:-20px; padding-top:60px; padding-bottom:30px;">
+<div class="container"> 
+<form>
+    <div class="form-group">
+        <label style="border-bottom: #c4e17f 2px solid;">Boat Title</label>
+        <input id="title" ng-model="title" 
+        type="text" class="form-control" placeholder="Please include Year, Make and Model. Ex: 2016 Bass Tracker Pro 170">
+   </div>
+
+    <div class="form-group">
+        <label for="moreinfo" style="border-bottom: #DB9DBE 2px solid;">Description</label>
+        <textarea ng-model="moreinfo" class="form-control" id="moreinfo" placeholder="Share any information the future buyer should know."></textarea>
+    </div>
+
+    <div class="form-group">
+        <label style="border-bottom: #c4e17f 2px solid;">Price</label>
+        <input id="title" ng-model="price" 
+        type="text" class="form-control" placeholder="For sale price">
+   </div>
+
+    <div class="form-group">
+        <label style="border-bottom: #c4e17f 2px solid;">Name</label>
+        <input id="title" ng-model="name" 
+        type="text" class="form-control" placeholder="whats your name?">
+   </div>
+
+    <div class="form-group">
+        <label for="Email Address" style="border-bottom: #C49CDE 2px solid;">Email Address</label> 
+        <input id="emailAddress" ng-model="email" 
+        type="text" class="form-control" placeholder="So the buyers have a way to reach you.">
+    </div>
+
+    <div class="form-group">
+        <label for="phone" style="border-bottom: #C49CDE 2px solid;">Phone Number</label> 
+        <input id="phone" ng-model="phone" 
+        type="text" class="form-control" placeholder="1(415)555-5555">
+    </div>
+
+
+    <p>All fields required. Thank you</p>
+
+    <div class="alert alert-danger" id="error" style="display:none;">
+        <strong>Error:</strong> Missing or invalid field entry. Please enter all valid fields.
+    </div>
+
+    <button class="button" ng-click="submitPost()">Submit</button>
+</form>
+
+
+
+
+
+    <!--  End of post    -->
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; BoatUp 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
