@@ -1,5 +1,3 @@
-var app = angular.module('boatup', [
-
-]);
+var app = angular.module('boatup', ["firebase"]);
 
 
