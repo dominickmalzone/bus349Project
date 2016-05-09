@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BoatUp - The boatup slogan</title>
+    <title>BoatUp | Post A Boat</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
     </nav>
 
     <!-- Post a boat for sale -->
-    
+
 <div class="backGround" style="background-color:#eaeaea; margin-top:-20px; padding-top:60px; padding-bottom:30px;">
 <div class="container"> 
 <form>
@@ -87,9 +87,9 @@
    </div>
 
     <div class="form-group">
-        <label style="border-bottom: #c4e17f 2px solid;">Name</label>
-        <input id="title" ng-model="name" 
-        type="text" class="form-control" placeholder="whats your name?">
+        <label style="border-bottom: #c4e17f 2px solid;">City</label>
+        <input id="title" ng-model="city" 
+        type="text" class="form-control" placeholder="Where the boat is">
    </div>
 
     <div class="form-group">
@@ -105,7 +105,7 @@
     </div>
 
 
-    <p>All fields required. Thank you</p>
+    <p id="allfields">All fields required. Thank you</p>
 
     <div class="alert alert-danger" id="error" style="display:none;">
         <strong>Error:</strong> Missing or invalid field entry. Please enter all valid fields.
