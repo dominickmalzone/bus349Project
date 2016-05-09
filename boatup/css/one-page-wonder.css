@@ -11,8 +11,10 @@ body {
 .header-image {
     display: block;
     width: 100%;
+    padding-top: 100px;
     text-align: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1429153243204-48d8e868f40d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=fe23a5d7767171bea7c9c0a1dbfc0e81') no-repeat center center scroll;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('http://mms.businesswire.com/media/20150519005640/en/468325/5/RangerFishing_8803_highres.jpg') no-repeat center center scroll;
+    height: 650px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -29,9 +31,8 @@ body {
 }
 
 .headline h2 {
-    font-size: 37px!important:;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    font-size: 2em;
+    color: #c9c9c9;
 }
 
 .featurette-divider {
@@ -196,6 +197,64 @@ footer {
     list-style-type: none;
 }
 
+.coolbutt {
+    color: #31302B;
+    background: #FFF;
+    width: 280px;
+    padding: 12px 17px;
+    margin: 25px;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #31302B;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;    
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+.coolbutt:hover {
+    box-shadow: inset 280px 0 0 0 #31302B;
+    color: #FFF;
+}
+.post{
+    color: #31302B;
+    background-color: white;
+}
 
+.bottom{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://urbanelijk.files.wordpress.com/2015/03/chicagorush.jpg') no-repeat center center scroll;
+    height: 650px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.bottom h3 {
+    font-size: 2em;
+    color: #c9c9c9;
+}
+.start{
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+}
 
+.padd{
+    margin-right: 10px;
+}
+
+.mybut{
+    width: 150px;
+}
+
+.crap{
+    text-align: center;
+}
 

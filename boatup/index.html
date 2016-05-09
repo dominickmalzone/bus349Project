@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BoatUp - The boatup slogan</title>
+    <title>BoatUp | Home</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,8 @@
     <link href="css/one-page-wonder.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
 
@@ -50,19 +52,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#services">Browse Boats</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#services">Search Boats</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Signup</a>
+                        <a href="#contact">Sell Boat</a>
                     </li>
 
                 </ul>
@@ -76,9 +69,14 @@
     <header class="header-image">
         <div class="headline">
             <div class="container">
-                <h1>Selling can be rough</h1>
-                <h2>Boat stuff.</h2>
-                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <h1>Make your next cast one to remember</h1>
+                <h2 style="font-size: 24px;">Buy or sell your boat on the fasting growing watercraft platform.</h2>
+                        <a href=""><button type="button" class="btn btn-primary btn-lg coolbutt">Browse Available Boats</button></a>
+                        <br>
+                        <a href=""><span class="post">Or post one for sale</span></a>
+
+          
+                
             </div>
         </div>
     </header>
@@ -90,17 +88,17 @@
 
         <!-- First Featurette -->
         <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500" style="height: 500px; width: 500px;">
+            <img class="featurette-image img-circle img-responsive pull-right" src="img/highfive1.jpg">
             <h2 class="featurette-heading">Buy
-                <span class="text-muted">from fisherman who love their boat as much as you will.</span>
+                <span class="text-muted">from fisherman just like you.</span>
             </h2>
-            <p class="lead">All boats and owners go through a qualification process to ensure highest quality for the boatup community. We do our best to ensure proper maintenance, minimal issuess and a transparent transaction.       </div>
+            <p class="lead">All boats and owners go through a qualification process to ensure highest quality for the boatup community.</div>
 
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
         <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="">
+            <img class="featurette-image img-circle img-responsive pull-left" src="img/friendsBoat.png">
             <h2 class="featurette-heading">Sell
                 <span class="text-muted">your boat on a high converting platform</span>
             </h2>
@@ -108,28 +106,34 @@
         </div>
 
         <hr class="featurette-divider">
+</div>
 
-        <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">Simple
-                <span class="text-muted">Will Seal the Deal.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div class="bottom">
+        <div class="start">
+            <h1>See BoatUp is changing the midwest boating community</h1>
+            <div class="btn-group" style="padding-top: 40px;">
+                <button class = "btn btn-primary pull-left padd mybut">Browse</button>
+                <button class = "btn btn-primary pull-right mybut">Post</button>
+            </div>
         </div>
+            <div class="container">
 
-        <hr class="featurette-divider">
+
+            </div>
+    
+    </div>
+
 
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 crap">
                     <p>Copyright &copy; BoatUp 2016</p>
                 </div>
             </div>
         </footer>
 
-    </div>
+    
     <!-- /.container -->
 
     <!-- jQuery -->
