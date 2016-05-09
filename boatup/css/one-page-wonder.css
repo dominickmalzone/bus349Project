@@ -183,9 +183,10 @@ footer {
 
 .proimg{
   position: relative;
-  left: 50%;  
-  height: 100px;
-  width: 100px;  
+  left: 50%;
+  bottom: 15px;  
+  max-width:200px; 
+  max-height:200px;
 }
 
 .pad{
@@ -256,5 +257,18 @@ footer {
 
 .crap{
     text-align: center;
+}
+
+.hvr:hover{
+    background-color: #b5b5b5; 
+    cursor: pointer;  
+}
+.toplogo{
+    margin-top: -14px;
+    height:50px; 
+    width: 100px;    
+}
+.blu{
+    color: #00a9bc;
 }
 
