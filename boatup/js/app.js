@@ -1,3 +1,3 @@
-var app = angular.module('boatup', ["firebase"]);
+var app = angular.module('boatup', ['firebase', 'ui.bootstrap']);
 
 
