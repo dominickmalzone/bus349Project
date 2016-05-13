@@ -52,10 +52,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="http://www.boatup.co">Home</a>
+                        <a href="http://www.boatup.club">Home</a>
                     </li>
                     <li>
-                        <a href="http://www.boatup.co/chicago.html">Browse</a>
+                        <a href="http://www.boatup.club/chicago.html">Browse</a>
                     </li>
                 </ul>
             </div>
@@ -65,69 +65,59 @@
     </nav>
 
     <!-- Post a boat for sale -->
-
-<div class="backGround" style="background-color:#eaeaea; margin-top:-20px; padding-top:60px; padding-bottom:30px;">
+<h2 class="postext">Post a Boat</h2>
+<div class="backGround" style="background-color:#eaeaea; margin-top:30px; padding-top:20px; padding-bottom:30px;">
 <div class="container"> 
 <form>
     <div class="form-group">
-        <label style="border-bottom: #c4e17f 2px solid;">Boat Title</label>
+        <label style="border-bottom: #00a9bc 2px solid;">Boat Title</label>
         <input id="title" ng-model="title" 
         type="text" class="form-control" placeholder="Please include Year, Make and Model. Ex: 2016 Bass Tracker Pro 170">
    </div>
 
     <div class="form-group">
-        <label for="moreinfo" style="border-bottom: #DB9DBE 2px solid;">Description</label>
+        <label for="moreinfo" style="border-bottom: #00a9bc 3px solid;">Description</label>
         <textarea ng-model="moreinfo" class="form-control" id="moreinfo" placeholder="Share any information the future buyer should know."></textarea>
     </div>
 
     <div class="form-group">
-        <label style="border-bottom: #c4e17f 2px solid;">Price</label>
+        <label style="border-bottom: #00a9bc 3px solid;">Price</label>
         <input id="title" ng-model="price" 
         type="text" class="form-control" placeholder="For sale price">
    </div>
 
     <div class="form-group">
-        <label style="border-bottom: #c4e17f 2px solid;">City</label>
+        <label style="border-bottom: #006975 3px solid;">City</label>
         <input id="title" ng-model="city" 
         type="text" class="form-control" placeholder="Where the boat is">
    </div>
 
     <div class="form-group">
-        <label for="Email Address" style="border-bottom: #C49CDE 2px solid;">Email Address</label> 
+        <label for="Email Address" style="border-bottom: #006975 3px solid;">Email Address</label> 
         <input id="emailAddress" ng-model="email" 
         type="text" class="form-control" placeholder="So the buyers have a way to reach you.">
     </div>
 
     <div class="form-group">
-        <label for="phone" style="border-bottom: #C49CDE 2px solid;">Phone Number</label> 
+        <label for="phone" style="border-bottom: #006975 3px solid;">Phone Number</label> 
         <input id="phone" ng-model="phone" 
         type="text" class="form-control" placeholder="1(415)555-5555">
     </div>
 
-
-    <p id="allfields">All fields required. Thank you</p>
+    <label for="Email Address" style="border-bottom: #006975 3px solid;">Upload Image</label> 
+    <input type="file" accept="image/*" capture="camera" id="file-upload"> </div>
+    
+    <p class="crap" id="allfields">All fields required. Thank you</p>
 
     <div class="alert alert-danger" id="error" style="display:none;">
         <strong>Error:</strong> Missing or invalid field entry. Please enter all valid fields.
     </div>
-
     
-    <input type="file" accept="image/*" capture="camera" id="file-upload"> </div>
-
-    <button class="button" ng-click="submitPost()">Submit</button>
-
-
+    <button class="container btn btn-primary" style="width: 100%; height: 40px; margin-top:20px;" ng-click="submitPost()">Submit</button>
 
 </form>
 
-
-
-
-
-
     <!--  End of post    -->
-
-
 
         <!-- Footer -->
         <footer>
